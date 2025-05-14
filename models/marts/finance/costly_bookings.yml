@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: costly_bookings
+    description: "This model filters the bookings to include only those with a cost greater than 30."
+    columns:
+      - name: bookid
+        description: "The primary key for this table"
+      - name: facid
+        description: "The primary key for this table"
+      - name: memid
+        description: "The primary key for this table"
+      - name: cost
+        description: "The cost of the booking"

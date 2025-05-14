@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: booking_data
+    description: "A schema for the CD model"
+    database: exercises
+    schema: cd
+    tables:
+      - name: bookings
+        description: "Contains booking information"
+        columns:
+          - name: bookid
+            description: "The primary key for this table"
+            data_tests:
+              - unique
+              - not_null
+      - name: facilities
+        description: "Contains information about the facilities, including their names and costs"
+        columns:
+          - name: facid
+            description: "The primary key for this table"
+            data_tests:
+              - unique
+              - not_null
+      - name: members
+        description: "Contains information about the members, including their names and phones"
+        columns:
+          - name: memid
+            description: "The primary key for this table"
+            data_tests:
+              - unique
+              - not_null

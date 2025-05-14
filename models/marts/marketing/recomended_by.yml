@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: recomended_by
+    description: "This model contains the members and recomenders data."
+    columns:
+      - name: member_id
+        description: "The primary key for a member"
+        tests:
+          - unique
+          - not_null
+      - name: recomenders_id
+        description: "The primary key for a recomenders"
+      - name: recomender_name
+      - name: recomender_phone
+        description: "The phone number of the recomenders"

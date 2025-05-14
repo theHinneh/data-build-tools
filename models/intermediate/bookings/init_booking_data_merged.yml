@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: init_booking_data_merged
+    description: "This model merges the bookings, facilities, and members tables into a single table."
+    columns:
+      - name: bookid
+        description: "The primary key and unique identifier for each booking."
+      - name: facid
+        description: "The primary key and unique identifier for each facility."
+      - name: memid
+        description: "The primary key and unique identifier for each member."
