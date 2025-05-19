@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: stripe
+    description: "A schema for the Stripe model"
+    database: exercises
+    schema: dbt
+    tables:
+      - name: payments
+        description: "Contains payment information"

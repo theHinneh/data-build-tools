@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: "A schema for the Jaffle Shop model"
+    database: exercises
+    schema: dbt
+    tables:
+      - name: orders
+        description: "Contains order information"
+      - name: customers
+        description: "Contains customer information"
